@@ -143,6 +143,20 @@ View the detailed coverage report [here](./coverage_report/index.html).
    forge script --chain arbitrum-sepolia script/DeployDex.s.sol:DeployDEX --rpc-url $ARB_SEPOLIA_RPC_URL --private-key $PRIVATE_KEY --broadcast --verify --etherscan-api-key $ARBISCAN_API_KEY
    ```
 
+3. Verify individual contracts:
+
+   ```sh
+   souece .env
+
+   forge verify-contract \
+     --chain arbitrum-sepolia \
+     --num-of-optimizations 200 \
+     --watch \
+     --etherscan-api-key $ARBISCAN_API_KEY \
+     [ADDRESS] \
+     [CONTRACT]
+   ```
+
 ---
 
 ## Future Enhancements
