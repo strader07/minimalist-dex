@@ -143,8 +143,6 @@ View the detailed coverage report [here](./coverage_report/index.html).
    forge script --chain arbitrum-sepolia script/DeployDex.s.sol:DeployDEX --rpc-url $ARB_SEPOLIA_RPC_URL --private-key $PRIVATE_KEY --broadcast --verify --etherscan-api-key $ARBISCAN_API_KEY
    ```
 
-```
-
 ---
 
 ## Future Enhancements
@@ -153,4 +151,3 @@ View the detailed coverage report [here](./coverage_report/index.html).
 - **Real Oracle Integration**: Use Chainlink for real-time USD-based prices.
 - **Liquidity Mining**: Introduce rewards for liquidity providers.
 - **Market Making**: Improve asset pricing incorporating both of oracle and internal pool.
-```
