@@ -13,7 +13,7 @@ The project is implemented in **Solidity** using **Foundry** for testing and **S
 
 ---
 
-## Architecture
+## Architecture ([View Diagram](./contract-architecture.png))
 
 ### Smart Contracts:
 
@@ -53,7 +53,7 @@ The project is implemented in **Solidity** using **Foundry** for testing and **S
 | **StableCoin A**  | [`0x8e0d3Ded296c324050EeF42662c6a778a96DFe73`](https://sepolia.arbiscan.io/address/0x8e0d3Ded296c324050EeF42662c6a778a96DFe73#code) |
 | **StableCoin B**  | [`0xE7A42EF87A5B717B46940120A0E84e2399acff90`](https://sepolia.arbiscan.io/address/0xE7A42EF87A5B717B46940120A0E84e2399acff90#code) |
 
----
+## Example transaction of [token swap](https://sepolia.arbiscan.io//tx/0x9324860b2630a6c006eb1de6451d6fc4ba785f7db292e899f1d2fd858ee7e1d5)
 
 ## Running Locally & Testing
 
@@ -153,6 +153,7 @@ View the detailed coverage report [here](./coverage_report/index.html).
      --num-of-optimizations 200 \
      --watch \
      --etherscan-api-key $ARBISCAN_API_KEY \
+     --constructor-args $(cast abi-encode "constructor(string,string,uint8,uint256)" "arg1" "arg2" arg3 arg4) \
      [ADDRESS] \
      [CONTRACT]
    ```
